@@ -1,0 +1,1635 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url('./fonts/helvetica-light-587ebe5a59211.ttf') format('truetype');     
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('./fonts/Helvetica-Bold.ttf') format('truetype');     
+    font-weight: bold;
+    font-style: normal;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Helvetica';
+   
+}
+
+.menu{
+    background-color: #D0CECE;
+    color: #FFF;
+    font-size: 16px;
+}
+
+.menu-lista{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    margin: 0px 125px;
+    align-items: center;
+    list-style: none;
+}
+
+.icones-menu600{
+    display: none;
+}
+
+#menu600{
+    display: none;
+}
+
+
+
+.menu-lista li:hover{
+    cursor:pointer;
+    opacity: 0.5;
+}
+
+.logo{
+    height: 60px;
+    width: 165px;
+    background-color: #C2BCBC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo a{
+    opacity: 0.5;
+    font-size: 14px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+#btnBusca{
+    display: flex;
+    width: 30px;
+}
+
+#divBusca{
+    display: none;
+    width:300px;
+    align-items: center;
+  }
+  
+  #caixaBusca{
+    font-size:16px;
+    padding: 5px;
+    border: 1px solid #969292;
+    border-radius: 10px;
+    height:16px;
+    width:260px;
+  }
+
+  #botao-buscar{
+    width: 30px;
+    margin-left: 10px;
+}
+
+#botao-buscar:hover{
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.cabecalho{
+    background-color: #E6E5E5;
+    color:#C2BCBC;
+    height: 300px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+.cabecalho h1{
+    line-height: 1.3;
+    font-weight: bold;
+}
+
+.links-carrocel{
+    margin: 60px 120px;
+    display: flex;
+}
+
+.link01{
+    background-color: #D8D8D8;
+    width: 631px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    opacity: 80%;
+    color: #FFF;
+}
+
+.link01:hover, .link02:hover, .link03:hover{
+    cursor:pointer;
+    opacity: 100%;
+}
+
+.link01 h2{
+    font-size: 24px;
+}
+
+.texto-link01{
+    margin:auto;
+}
+
+.texto-link01 span{
+    display: block;
+    line-height: 2;
+}
+
+.redes-sociais{
+    background-color: #D0CECE;
+    width: 91px;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: flex-end;
+}
+
+.facebook{
+    width: 8px;
+    margin-left: 8px;
+}
+
+.facebook:hover{
+    width: 16px;
+    cursor: pointer;
+}
+
+.twitter{
+    width: 17px;
+}
+
+.twitter:hover{
+    cursor:pointer;
+    width: 28px;
+}
+
+.instagram{
+    width: 16px;
+    margin-right: 8px;
+}
+
+.instagram:hover{
+    cursor:pointer;
+    width: 28px;
+}
+
+.carrocel-links02-03{
+    display: flex;
+}
+
+.link02{
+    background-color: #D8D8D8;
+    opacity: 80%;
+    width: 353px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #FFF;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.texto-link02{
+    margin:auto;
+}
+
+.link02 h2{
+    font-size: 24px;
+}
+
+.link02 span{
+    display: block;
+    line-height: 2;
+}
+
+.link03{
+    background-color: #D8D8D8;
+    opacity: 80%;
+    width: 259px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #FFF;
+    margin-top: 20px;  
+}
+
+.texto-link03{
+    margin:auto;
+}
+
+.link03 h2{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.link04 {
+    background-color: #C2BCBC;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    width: 447px;
+    height:560px;
+}
+
+.texto-link04{
+    margin: auto;
+}
+
+.link04 h2 {
+    font-size: 24px;
+    color: #FFF;
+    margin: 0px 50px;
+}
+
+.cronometro{
+    display: flex;
+    align-items: center;
+    margin: 30px 33px;
+}
+
+.link04 h1 {
+    font-size: 48px;
+    color: #FFF;
+}
+
+.h1-cronometro{
+    font-size: 48px;
+    opacity: 0.5;
+}
+
+.link04 p{
+    font-size: 20px;
+    color: #FFF;
+    margin-left: 15px;
+}
+
+.banner{
+    background-color:#E6E5E5;
+    color:#FFF;
+    display: flex;
+    margin: 0px 120px;
+    height: 130px;
+    align-items: center;
+}
+
+.banner h2{
+    font-size: 36px;
+    font-weight: bold;
+    margin-left: 75px;
+}
+
+.banner p{
+    font-size: 20px;
+    margin: 0px 50px;
+}
+
+.suspendisse{
+    background-color: #BBB5B5;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid #969292;
+    width: 188px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    margin-right: 75px;
+    padding: 0px 25px;
+}
+
+.banner span{
+    display: block;
+    line-height: 2;
+}
+
+.categorias-carrocel{
+    margin: 70px 120px 0px 120px;
+}
+
+.categorias-carrocel h2{
+    color: #BBB5B5;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.botoes-pai{
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0px;  
+}
+
+.botoes-filho01{
+    display:flex;
+    justify-content: space-between;
+    margin: 0px 30px;
+}
+
+.botoes-filho02{
+    display: flex;
+    margin: 20px 0px;
+    justify-content: center;
+}
+
+.btn00, .btn01, .btn02, .btn03, .btn04, .btn05, .btn06, .btn07 {
+    background-color: #D8D8D8;
+    border: 2px solid #969292;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bold;
+    height: 48px;
+    padding: 10px 20px;
+}
+
+.btn00:hover, .btn01:hover, .btn02:hover, .btn03:hover, .btn04:hover, .btn05:hover, .btn06:hover, .btn07:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.btn06{
+    margin: 0px 30px;
+}
+
+.postagens-recentes {
+    margin: 0px 120px 70px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.postagens-recentes h2{
+    font-size: 26px;
+    color: #BBB5B5;
+    font-weight: bold;
+    align-self:start;
+}
+
+.posts{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.post01, .post02, .post03 {
+    display: flex;
+    flex-direction: column;
+}
+
+.retangulo-post{
+    background-color: #E6E5E5;
+    width: 353px;
+    height: 240px;
+}
+
+.posts p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #BBB5B5;
+    text-align: center;
+    width: 276px;
+    line-height: 1.5;
+    margin: 20px 50px;
+}
+
+.posts a{
+    font-size: 16px;
+    text-decoration: underline;
+    color: #BBB5B5;
+    text-align: center;
+}
+
+.btnver-tudo{
+    background-color: #C2BCBC;
+    width: 353px;
+    height: 48px;
+    border: 2px solid #969292;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btnver-tudo:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.parceiros01{
+    background-color: #D8D8D8;
+    width: 1099px;
+    height: 206px;
+    margin: auto;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.parceiros01 h2{
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-left: 120px;
+}
+
+.retangulos-parceiros01{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+.retangulo-parceiro01{
+    width: 198px;
+    background-color: #E6E5E5;
+    margin-right: 45px;
+}
+
+
+.retangulo-parceiro02{
+    width: 96px;
+    background-color: #E6E5E5;
+    margin-right: 40px;
+}
+
+.retangulo-parceiro03{
+    width: 187px;
+    background-color: #E6E5E5;
+    margin-right: 40px;
+}
+
+.retangulo-parceiro04{
+    width: 198px;
+    background-color: #E6E5E5;
+    margin-right: 40px;
+}
+
+.retangulo-parceiro05{
+    width: 153px;
+    background-color: #E6E5E5;
+}
+
+.parceiros02{
+    margin: 70px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parceiros02 h2{
+    color: #D8D8D8;
+    font-size: 26px;
+    align-self: start;
+    font-weight: bold;
+}
+
+.detalhes-parceiros02{
+    display: flex;
+    margin-top: 30px;
+}
+
+.dretangulo-parceiro{
+    background-color: #C2BCBC;
+    width: 259px;
+    height: 150px;
+}
+
+.detalhes-parceiro h3{
+    font-size: 20px;
+    color: #D8D8D8;
+    font-weight: bold;
+    line-height: 1.5;
+    width: 218px;
+    margin-top: 10px;
+}
+
+.detalhes-parceiro p{
+    font-size: 18px;
+    color: #D8D8D8;
+    line-height: 1.5;
+    width: 280px;
+    margin-top:15px;
+}
+
+.box-footer01{
+    height: 216px;
+    display: flex;
+    background-color:#E6E5E5;
+}
+
+.realizacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 140px;
+}
+
+.realizacao h3{
+    font-size: 20px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.apoio h3{
+    font-size: 20px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.retangulos-realizacao {
+    display:flex;
+    margin-top: 20px;
+}
+
+.retangulo-realizacao01{
+    width: 142px;
+    height: 40px;
+    background-color: #D8D8D8;
+}
+
+.retangulo-realizacao02{
+    width: 125px;
+    height: 60px;
+    background-color: #D8D8D8;
+    margin: 0px 20px;
+}
+
+.retangulo-realizacao03{
+    width: 98px;
+    height: 40px;
+    background-color: #D8D8D8;
+}
+
+.apoio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 140px;
+}
+
+.apoio h3{
+    font-size: 20px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.retangulos-apoio {
+    display:flex;
+    margin-top: 20px;
+}
+
+.retangulo-apoio01{
+    width: 98px;
+    height: 39.25px;
+    background-color: #D8D8D8;
+}
+
+.retangulo-apoio02{
+    width: 125px;
+    height: 58.87px;
+    background-color: #D8D8D8;
+    margin: 0px 20px;
+}
+
+.retangulo-apoio03{
+    width: 80px;
+    height: 50.04px;
+    background-color: #D8D8D8;
+}
+
+.box-footer02{
+    height: 47px;
+    background-color: #D0CECE;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.box-footer02 p{
+    color: #FFF;
+    font-size: 14px;
+}
+
+.traco{
+    background-color: #FFF;
+    width: 1px;
+    height: 27px;
+    margin: 0px 15px;
+}
+
+.twitterf{
+    padding: 15px;
+}
+
+.facebookf:hover{
+    width: 10px;
+    cursor: pointer;
+}
+
+
+.twitterf:hover{
+    cursor:pointer;
+    width: 20px;
+}
+
+.instagramf:hover{
+    cursor:pointer;
+    width: 20px;
+}
+
+@media (max-width: 1250px){
+    .menu-lista{
+        margin: 0px 20px;
+        font-size: 14px;
+    }
+
+    #divBusca{
+        width: 200px;
+    }
+
+    #caixaBusca{
+        font-size:14px;
+        width:200px;
+    }
+
+    .cabecalho{
+        font-size: 18px;
+        height: 250px;
+    }
+
+    .links-carrocel{
+        margin: 30px 60px;
+    }
+    
+    .link01{
+        width: 594px;
+        height: 230px;
+    }
+    
+    .link01 h2{
+        font-size: 20px;
+    }
+    
+    
+    .link02{
+        width: 300px;
+        height: 230px;
+    }
+    
+    
+    .link02 h2{
+        font-size: 20px;
+    }
+ 
+    
+    .link03{
+        width: 275px;
+        height: 230px;
+    }
+    
+    
+    .link03 h2{
+        font-size: 20px;
+    }
+    
+    .link04 {
+        width: 340px;
+        height:480px;
+    }
+    
+    
+    .link04 h2 {
+        font-size: 20px;
+        margin: 0px 20px;
+    }
+    
+    .link04 h1 {
+        font-size: 40px;
+    }
+    
+    .h1-cronometro{
+        font-size: 40px;
+    }
+    
+    .link04 p{
+        font-size: 14px;
+
+    }
+
+    .banner{
+        margin: 0px 60px;
+        height: 120px;
+    }
+    
+    .banner h2{
+        font-size: 30px;
+        margin-left: 70px;
+    }
+    
+    .banner p{
+        font-size: 16px;
+        margin: 0px 40px;
+    }
+    
+    .suspendisse{
+        font-size: 18px;
+        width: 160px;
+        height: 38px;
+        margin-right: 70px;
+        padding: 0px 20px;
+    }
+
+    .categorias-carrocel{
+        margin: 70px 120px 0px 120px;
+    }
+    
+    .categorias-carrocel h2{
+        font-size: 24px;
+    }
+      
+    .botoes-filho01{
+        margin: 0px 30px;
+    }
+    
+    .botoes-filho02{
+        display: flex;
+        margin: 20px 0px;
+        justify-content: center;
+    }
+    
+    .btn00, .btn01, .btn02, .btn03, .btn04, .btn05, .btn06, .btn07 {
+        font-size: 14px;
+        height: 42px;
+        padding: 5px 13px;
+    }
+    
+    .btn06{
+        margin: 0px 25px;
+    }
+
+    .postagens-recentes {
+        margin: 0px 50px 35px 50px;
+    }
+    
+    .postagens-recentes h2{
+        font-size: 24px;
+    }
+    
+    .posts{
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    
+    
+    .retangulo-post{
+        width: 290px;
+        height: 210px;
+    }
+    
+    .posts p{
+        font-size: 14px;
+        width: 204px;
+        margin: 10px 50px;
+    }
+    
+    .posts a{
+        font-size: 12px;
+    }
+    
+    .btnver-tudo{
+        width: 313px;
+        height: 40px;
+    }
+
+    .parceiros01{
+        width: 950px;
+        height: 150px;
+    }
+    
+    .parceiros01 h2{
+        font-size: 24px;
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+    
+    .retangulos-parceiros01{
+        height: 45px;
+        margin-top: 20px;
+    }
+    
+    
+    .retangulo-parceiro01{
+        width: 178px;
+        margin-right: 40px;
+    }
+    
+    
+    .retangulo-parceiro02{
+        width: 70px;
+        margin-right: 35px;
+    }
+    
+    .retangulo-parceiro03{
+        width: 177px;
+        margin-right: 35px;
+    }
+    
+    .retangulo-parceiro04{
+        width: 178px;
+        margin-right: 35px;
+    }
+    
+    .retangulo-parceiro05{
+        width: 143px;
+    }
+
+    .parceiros02{
+        margin: 35px 60px;
+    }
+    
+    .parceiros02 h2{
+        font-size: 24px;
+    }
+    
+    .detalhes-parceiros02{
+        margin-top: 20px;
+    }
+    
+    .dretangulo-parceiro{
+        width: 236px;
+        height: 132px;
+    }
+    
+    .detalhes-parceiro h3{
+        font-size: 18px;
+        width: 218px;
+    }
+    
+    .detalhes-parceiro p{
+        font-size: 14px;
+        width: 242px;
+        margin-top: 8px;
+    }
+
+    .box-footer01{
+        height: 198px;
+    }
+    
+    .realizacao{
+        margin-left: 120px;
+    }
+    
+    .realizacao h3{
+        font-size: 18px;
+    }
+    
+    .retangulos-realizacao {
+        margin-top: 18px;
+    }
+    
+    .retangulo-realizacao01{
+        width: 122px;
+        height: 30px;
+    }
+    
+    .retangulo-realizacao02{
+        width: 105px;
+        height: 50px;
+        margin: 0px 15px;
+    }
+    
+    .retangulo-realizacao03{
+        width: 78px;
+        height: 30px;
+    }
+    
+    .apoio{
+        margin-left: 160px;
+    }
+    
+    .apoio h3{
+        font-size: 18px;
+    }
+    
+    .retangulos-apoio {
+        display:flex;
+        margin-top: 18px;
+    }
+    
+    .retangulo-apoio01{
+        width: 80px;
+        height: 29.25px;
+    }
+    
+    .retangulo-apoio02{
+        width: 115px;
+        height: 48.87px;
+        margin: 0px 15px;
+    }
+    
+    .retangulo-apoio03{
+        width: 80px;
+        height: 35.04px;
+    }
+    
+    .box-footer02{
+        height: 40px;
+    }
+    
+    .box-footer02 p{
+        font-size: 12px;
+    }
+    
+    .twitterf{
+        padding: 10px;
+    }
+    
+
+}
+
+@media (max-width: 1000px){    
+    .menu-lista{
+        font-size: 12px;
+        height: 45px;
+        margin: 0px 20px;
+    }
+    
+    .logo{
+        height: 45px;
+        width: 95px;
+    }
+    
+    .logo a{
+        font-size: 12px;
+    }
+    
+    #btnBusca{
+        width: 20px;
+    }
+    
+    #divBusca{
+        width:110px;
+      }
+      
+      #caixaBusca{
+        font-size:12px;
+        padding: 3px;
+        height:10px;
+        width:90px;
+      }
+    
+      #botao-buscar{
+        width: 20px;
+        margin-left: 5px;
+    }
+    
+    .cabecalho {
+        height: 150px;
+        font-size: 14px;
+    }
+
+    .links-carrocel{
+        margin: 30px 30px;
+    }
+    
+    .link01{
+        width: 330px;
+        height: 200px;
+    }
+    
+    .link01 h2{
+        font-size: 16px;
+    }
+    
+    
+    .link02{
+        width: 160px;
+        height: 190px;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    
+    
+    .link02 h2{
+        font-size: 16px;
+    }
+ 
+    
+    .link03{
+        width: 160px;
+        height: 190px;
+        margin-top: 10px;
+    }
+    
+    
+    .link03 h2{
+        font-size: 16px;
+    }
+    
+    .link04 {
+        width: 300px;
+        height:400px;
+        margin-left: 10px;
+    }
+    
+    
+    .link04 h2 {
+        font-size: 16px;
+        margin: 0px 10px;
+    }
+    
+    .link04 h1 {
+        font-size: 26px;
+    }
+    
+    .h1-cronometro{
+        font-size: 26px;
+    }
+    
+    .link04 p{
+        font-size: 10px;
+    }
+
+    .banner{
+        margin: 0px 30px;
+        height: 100px;
+    }
+    
+    .banner h2{
+        font-size: 30px;
+        margin-left: 30px;
+    }
+    
+    .banner p{
+        font-size: 12px;
+        margin: 0px 20px;
+    }
+    
+    .suspendisse{
+        font-size: 16px;
+        width: 100px;
+        height: 28px;
+        margin-right: 30px;
+        padding: 0px 10px;
+    }
+
+    .categorias-carrocel{
+        margin: 40px 60px 0px 40px;
+    }
+    
+    .categorias-carrocel h2{
+        font-size: 20px;
+    }
+      
+    .botoes-filho01{
+        margin: 0px 15px;
+    }
+    
+    .botoes-filho02{
+        margin: 10px 0px;
+    }
+    
+    .btn00, .btn01, .btn02, .btn03, .btn04, .btn05, .btn06, .btn07 {
+        font-size: 11px;
+        height: 40px;
+        padding: 3px 3px;
+    }
+    
+    .btn06{
+        margin: 0px 20px;
+    }
+
+    .postagens-recentes {
+        margin: 0px 40px 30px 40px;
+    }
+    
+    .postagens-recentes h2{
+        font-size: 22px;
+    }
+    
+    .retangulo-post{
+        width: 187px;
+        height: 175px;
+    }
+    
+    .posts p{
+        font-size: 12px;
+        width: 101px;
+        margin: 10px 48px;
+    }
+    
+    .posts a{
+        font-size: 10px;
+    }
+    
+    .btnver-tudo{
+        width: 230px;
+        height: 40px;
+    }
+
+    .parceiros01{
+        width: 610px;
+        height: 130px;
+    }
+    
+    .parceiros01 h2{
+        font-size: 22px;
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+    
+    .retangulos-parceiros01{
+        height: 40px;
+        margin-top: 20px;
+    }
+    
+    
+    .retangulo-parceiro01{
+        width: 120px;
+        margin-right: 20px;
+    }
+    
+    
+    .retangulo-parceiro02{
+        width: 45px;
+        margin-right: 20px;
+    }
+    
+    .retangulo-parceiro03{
+        width: 116px;
+        margin-right: 20px;
+    }
+    
+    .retangulo-parceiro04{
+        width: 106px;
+        margin-right: 20px;
+    }
+    
+    .retangulo-parceiro05{
+        width: 90px;
+    }
+    
+    .parceiros02 h2{
+        font-size: 22px;
+    }
+    
+    .detalhes-parceiros02{
+        flex-direction: column
+    }
+    
+    .dretangulo-parceiro{
+        width: 255px;
+        height: 155px;
+    }
+    
+    .detalhes-parceiro h3{
+        font-size: 16px;
+        width: 222px;
+    }
+    
+    .detalhes-parceiro p{
+        font-size: 12px;
+        width: 260px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }   
+    
+    .box-footer01{
+        height: 168px;
+    }
+    
+    .realizacao{
+        margin-left: 40px;
+    }
+    
+    .realizacao h3{
+        font-size: 16px;
+    }
+    
+    .retangulos-realizacao {
+        margin-top: 16px;
+    }
+    
+    .retangulo-realizacao01{
+        width: 80px;
+        height: 20px;
+    }
+    
+    .retangulo-realizacao02{
+        width: 75px;
+        height: 40px;
+        margin: 0px 10px;
+    }
+    
+    .retangulo-realizacao03{
+        width: 58px;
+        height: 20px;
+    }
+    
+    .apoio{
+        margin-left: 40px;
+    }
+    
+    .apoio h3{
+        font-size: 16px;
+    }
+    
+    .retangulos-apoio {
+        display:flex;
+        margin-top: 16px;
+    }
+    
+    .retangulo-apoio01{
+        width: 60px;
+        height: 19.25px;
+    }
+    
+    .retangulo-apoio02{
+        width: 85px;
+        height: 38.87px;
+        margin: 0px 10px;
+    }
+    
+    .retangulo-apoio03{
+        width: 60px;
+        height: 25.04px;
+    }
+    
+    .box-footer02{
+        height: 30px;
+    }
+    
+    .box-footer02 p{
+        font-size: 10px;
+    }
+    
+    .twitterf{
+        padding: 8px;
+    }
+
+    .twitterf:hover, .instagramf:hover{
+        width: 18px;
+    }
+
+    .facebookf:hover{
+        width: 9px;
+    }
+}
+
+@media (max-width: 600px){
+
+    .menu{
+        display: none;
+    }
+
+    .icones-menu600{
+        display: flex;
+        background-color: #D0CECE;
+        justify-content: space-between;
+    }
+
+
+    #menu600{
+        background-color: #D0CECE;
+        color: #FFF;
+        font-size: 12px; 
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        height: 100px;
+        box-shadow: 5px 5px 15px 5px rgb(170 170 170 / 79%);
+        padding: 5px;
+    }
+
+    .menu-lista600{
+        display: flex;
+        flex-direction: column;
+        height: 60px;
+        margin: 0px 5px;
+        list-style: none;
+    }
+
+    .menu-lista600 li{
+        margin: 1px;
+    }
+
+    .menu-lista600 li:hover{
+        cursor:pointer;
+        opacity: 0.5;
+    }
+
+    #iconeMenu{
+        background-color: #D0CECE;
+        border: none;
+    }
+
+    #iconeMenu:hover{
+        cursor: pointer; 
+        width: 35px;
+    }
+
+    #divBusca600{
+         margin: 2px 22px;
+         display: flex;
+         align-items: center;
+    }   
+
+    .links-carrocel{
+        margin: 20px 20px;;
+    }
+    
+    .link01{
+        width: 277px;
+        height: 184px;
+    }
+    
+    .link01 h2{
+        font-size: 14px;
+    }
+    
+    .link01 span{
+        font-size: 12px;
+    }
+    
+    .link02{
+        width: 134px;
+        height: 170px;
+    }
+    
+    
+    .link02 h2{
+        font-size: 14px;
+    }
+
+    .link02 span{
+        font-size: 12px;
+    }
+ 
+    
+    .link03{
+        width: 132px;
+        height: 170px;
+    }
+    
+    
+    .link03 h2{
+        font-size: 14px;
+    }
+
+    .link03 span{
+        font-size: 12px;
+    }
+    
+    .link04 {
+        width: 300px;
+        height: 365px;
+    }
+    
+    
+    .link04 h2 {
+        font-size: 14px;
+    }
+    
+    .link04 h1 {
+        font-size: 16px;
+    }
+    
+    .h1-cronometro{
+        font-size: 16px;
+    }
+    
+    .link04 p{
+        font-size: 8px;
+        width: 54px;
+    }
+
+    .banner{
+        margin: 0px 30px;
+        height: 90px;
+    }
+    
+    .banner h2{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    
+    .banner p{
+        font-size: 10px;
+        margin: 0px 10px;
+    }
+    
+    .suspendisse{
+        font-size: 14px;
+        width: 90px;
+        height: 26px;
+        margin-right: 20px;
+        padding: 0px 5px;
+    }
+
+    .categorias-carrocel{
+        margin: 30px 30px 0px 30px;
+    }
+    
+    .categorias-carrocel h2{
+        font-size: 18px;
+    }
+      
+    .botoes-filho01{
+        margin: 0px 10px;
+    }
+    
+    .btn00, .btn01, .btn02, .btn03, .btn04, .btn05, .btn06, .btn07 {
+        font-size: 9px;
+        height: 40px;
+        padding: 2px 2px;
+    }
+    
+    .btn06{
+        margin: 0px 18px;
+    }
+
+    .postagens-recentes {
+        margin: 0px 40px 30px 40px;
+    }
+    
+    .postagens-recentes h2{
+        font-size: 18px;
+    }
+
+    .posts{
+        flex-direction: column;
+    }
+    
+    .retangulo-post{
+        margin-top: 10px;
+    }
+    
+    .posts p{
+        font-size: 10px;
+        width: 197px;
+        margin: 10px 0px 5px;
+    }
+    
+    .posts a{
+        font-size: 10px;
+    }
+    
+    .btnver-tudo{
+        width: 174px;
+        height: 34px;
+        font-size: 14px;
+    }
+
+    .parceiros01{
+        width: 474px;
+        height: 122px;
+    }
+    
+    .parceiros01 h2{
+        font-size: 18px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    
+    .retangulos-parceiros01{
+        height: 35px;
+        margin-top: 20px;
+    }
+    
+    
+    .retangulo-parceiro01{
+        width: 100px;
+        margin-right: 10px;
+    }
+    
+    
+    .retangulo-parceiro02{
+        width: 35px;
+        margin-right: 10px;
+    }
+    
+    .retangulo-parceiro03{
+        width: 90px;
+        margin-right: 10px;
+    }
+    
+    .retangulo-parceiro04{
+        width: 86px;
+        margin-right: 10px;
+    }
+    
+    .retangulo-parceiro05{
+        width: 80px;
+    }
+
+    .parceiros02 h2 {
+        font-size: 18px;
+    }
+
+    .detalhes-parceiro h3 {
+        font-size: 14px;
+    }    
+
+    .detalhes-parceiro p {
+        font-size: 10px;
+    }
+
+    .box-footer01 {
+        height: 134px;
+    }
+
+    .realizacao h3 {
+        font-size: 12px;
+    }
+
+    .retangulo-realizacao01 {
+        width: 58px;
+        height: 18px;
+    }
+
+    .retangulo-realizacao02 {
+        width: 63px;
+        height: 31px;
+        margin: 0px 10px;
+    }
+
+    .retangulo-realizacao03 {
+        width: 47px;
+        height: 18px;
+    }
+
+    .apoio h3 {
+        font-size: 12px;
+    }
+
+    .retangulo-apoio01 {
+        width: 52px;
+        height: 17.25px;
+    }
+
+    .retangulo-apoio02 {
+        width: 64px;
+        height: 34.87px;
+        margin: 0px 10px;
+    }
+
+    .retangulo-apoio03 {
+        width: 48px;
+        height: 21.04px;
+    }
+
+    .box-footer02 {
+        height: 26px;
+    }
+
+    .box-footer02 p {
+        font-size: 9px;
+    }
+
+    .twitterf{
+        width: 10px;
+    }
+
+    .twitterf:hover{
+        width: 12px;
+    }
+
+    .facebookf{
+        width: 6px;
+    }
+
+    .facebookf:hover{
+        width: 8px;
+    }
+
+    .instagramf{
+        width: 10px;
+    }
+
+    .instagramf:hover{
+        width: 12px;
+    }
+
+    .traco {
+        width: 0.5px;
+        height: 25px;
+    }
+}
+

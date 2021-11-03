@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <link href="./CSS/hover-min.css" rel="stylesheet">
+        <link href="./CSS/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="menu">
+            <ul class="menu-lista" >
+                <li class="logo"><a href="./index.html">(logotipo)</a></li>
+                <li><a>Lorem ipsum</a></li>
+                <li><a>Dolor sit amet</a></li>
+                <li><a>Consectetur adipiscing</a></li>
+                <li><a>Quisque at</a></li>
+                <li><a>Mattis nibh</a></li>
+                <li class="hvr-grow"><a><img id ="btnBusca"src="./img/search.svg" onclick='mostraBusca()'></a></li>
+                <div id="divBusca">
+                    <input type="text" id="caixaBusca" placeholder="Quid quaeris?">
+                    <img src="./img/search.svg" id= "botao-buscar" alt="buscar" onclick="escondeBusca()">
+                </div>
+            </ul>
+        </nav>
+
+        <div class="icones-menu600">
+            <button id="iconeMenu" onclick='mostraMenu()'><img src="./img/menu-icon.svg" style="width:30px; margin: 2px 22px;"></button>
+            <div id="divBusca600">
+                <input type="text" id="caixaBusca" placeholder="Quid quaeris?">
+                <img src="./img/search.svg" id= "botao-buscar" alt="buscar" onclick="escondeBusca()">
+            </div>
+        </div>
+
+        <nav id="menu600">
+            <ul class="menu-lista600" >
+                <li class="logo"><a href="./index.html">(logotipo)</a></li>
+                <li><a>Lorem ipsum</a></li>
+                <li><a>Dolor sit amet</a></li>
+                <li><a>Consectetur adipiscing</a></li>
+                <li><a>Quisque at</a></li>
+                <li><a>Mattis nibh</a></li>  
+            </ul>
+        </nav>
+
+        <header class="cabecalho">
+            <h1>Ut ligula ante, ultrices nec nulla ac, <br> mattis fringilla nulla</h1>
+        </header>
+        <div class="todo-conteudo">
+            <div class="links-carrocel">
+                <div class="carrocel-links01-03">
+                    <div class= link01 onclick="alert('Link do primeiro banner aqui')">
+                        <div class="redes-sociais">
+                            <img class= "facebook" src="./img/Facebook@3x.svg" onclick='entrarFacebook(event)'>
+                            <img class= "twitter" src="./img/Twitter@3x.svg" onclick='entrarTwitter(event)'>
+                            <img class= "instagram" src="./img/Instagram@3x.svg" onclick='entrarInstagram(event)'>
+                        </div>
+                       <div class="texto-link01">
+                        <h2>Fusce in erat sollicitudin, egestas erat <br> vehicula, congue dui. <span>Nulla facilisi?</span></h2>
+                        <span onclick='mostraralerta(event, "link mauris laoreet 1")' style= "text-decoration:underline;">mauris laoreet</span>
+                       </div>
+                    </div>
+
+                    <div class="carrocel-links02-03">
+                        <div class= link02 onclick="alert('Link do segundo banner aqui')">
+                            <div class="redes-sociais">
+                                <img class ="facebook" src="./img/Facebook@3x.svg" onclick='entrarFacebook(event)'>
+                                <img class ="twitter" src="./img/Twitter@3x.svg" onclick='entrarTwitter(event)'>
+                                <img class="instagram" src="./img/Instagram@3x.svg" onclick='entrarInstagram(event)'>
+                            </div>
+                            <div class="texto-link02">
+                                <h2>Nunc id ipsum sed <br>odio dignissim <br>dapibus quis ut diam. <span>Aenean convallis!</span></h2>
+                                <span  onclick='mostraralerta(event, "link mauris laoreet 2")' style= "text-decoration:underline;">mauris laoreet</span>
+                            </div>
+                        </div>
+    
+                        <div class= link03 onclick="alert('Link do terceiro banner aqui')">
+                            <div class="redes-sociais">
+                                <img class ="facebook" src="./img/Facebook@3x.svg" onclick='entrarFacebook(event)'>
+                                <img class ="twitter" src="./img/Twitter@3x.svg" onclick='entrarTwitter(event)'>
+                                <img class="instagram" src="./img/Instagram@3x.svg" onclick='entrarInstagram(event)'>
+                            </div>
+                            <div class= "texto-link03">
+                                <h2>Suspendisse <br>massa orci,<br> euismod ut</h2>
+                                <span onclick='mostraralerta(event, "link mauris laoreet 3")' style= "text-decoration:underline;">mauris laoreet</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class= link04>
+                    <div class="redes-sociais">
+                        <img class ="facebook" src="./img/Facebook@3x.svg" onclick='entrarFacebook(event)'>
+                        <img class ="twitter" src="./img/Twitter@3x.svg" onclick='entrarTwitter(event)'>
+                        <img class="instagram" src="./img/Instagram@3x.svg" onclick='entrarInstagram(event)'>
+                    </div>
+                    <div class= "texto-link04">
+                        <h2>Maecenas cursus <br> sapien ut augue:</h2>
+                        <div class= "cronometro"><h1 class="h1-cronometro">0</h1><h1>99</h1> <p>eget ultrices velit molestie posuere libero;</p></div>
+                        <div class= "cronometro"><h1 class="h1-cronometro">00</h1><h1>3</h1> <p>malesuada libero pulvinar scelerisque consectetur;</p></div>
+                        <div class= "cronometro"><h1>201</h1> <p>dictum nibh enim, in ornare ipsum posuere sit amet;</p></div>
+                        <div class= "cronometro"><h1 class="h1-cronometro">0</h1><h1>74</h1> <p>mauris laoreet vitae tellus quis mollis.</p></div>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="banner">
+                <h2>Tincidunt</h2>
+                <p>Nulla efficitur, urna in finibus tincidunt, ex justo euismod mi, sit amet pretium arcu ipsum accumsan nisi. <span>Donec tempor velit dui?</span></p>
+                <div class="suspendisse">Suspendisse!</div>
+            </div>
+            <div class="categorias-carrocel">
+                <h2>Quisque gravida lorem sed lacus porttitor, non iaculis</h2>
+                <div class="botoes-pai">
+                    <div class="botoes-filho01">
+                        <button class="btn00">Phasellus vel</button>
+                        <button class="btn01">Urna at tortor</button>
+                        <button class="btn02">Laoreet dignissi</button>
+                        <button class="btn03">Rutrum</button>
+                        <button class="btn04">Class aptent taciti sociosqu litora</button>
+                    </div>
+                    <div class="botoes-filho02">
+                        <button class="btn05">Torquent per</button>
+                        <button class="btn06">Per inceptos himenaeos proin</button>
+                        <button class="btn07">Aliqua</button>
+                    </div>
+                </div>
+            </div>
+            <div class="postagens-recentes">
+                <h2>Morbi tincidunt, ipsum sed tristique facilisis:</h2>
+               <div class="posts">
+                    <div class="post01">
+                        <div class="retangulo-post"></div>
+                        <p> quis ipsum facilisis, maximus ex quis, vulputate felis. Donec lacinia tristique lorem, sit amet tempus ligula ultricies sed</p>
+                        <a>mauris laoreet</a>
+                    </div>
+                    <div class="post02">
+                        <div class="retangulo-post"></div>
+                        <p>Vestibulum vitae semper velit, eu faucibus felis. Etiam feugiat, massa rhoncus feugiat dapibus, arcu sem iaculis nulla, in pellentesque massa tellus quis quam. Cras ut nulla?</p>
+                        <a>mauris laoreet</a>
+                    </div>
+                    <div class="post03">
+                        <div class="retangulo-post"></div>
+                        <p> Eu dolor hendrerit porta eu pretium libero. Nam eget libero ut dolor tempus pellentesque</p>
+                        <a>mauris laoreet</a>
+                    </div>
+               </div>
+               <button class="btnver-tudo">Duis eu condimentum</button>
+            </div>
+            <div class="parceiros01">
+                <h2>Praesent consequat nibh vitae</h2>
+                <div class="retangulos-parceiros01">
+                    <div class="retangulo-parceiro01"></div>
+                    <div class="retangulo-parceiro02"></div>
+                    <div class="retangulo-parceiro03"></div>
+                    <div class="retangulo-parceiro04"></div>
+                    <div class="retangulo-parceiro05"></div>
+                </div>
+            </div>
+            <div class="parceiros02">
+                <h2>Aliquam efficitur blandit elit finibus vestibulum</h2>
+                <div class="detalhes-parceiros02">
+                    <div class="detalhes-parceiro">
+                        <div class="dretangulo-parceiro"></div>
+                        <h3>Pellentesque eu sollicitudin</h3>
+                        <p>Suspendisse porta molestie congue. Proin ac sem libero.</p>
+                    </div>
+               
+                
+                    <div class="detalhes-parceiro">
+                        <div class="dretangulo-parceiro"></div>
+                        <h3>Suspendisse sem eros</h3>
+                        <p>Suspendisse pulvinar mollis eros at dapibus. Nam id sem pretium, finibus odio quis, fringilla eros. Phasellus quis…</p>
+                    </div>
+               
+                
+                    <div class="detalhes-parceiro">
+                        <div class="dretangulo-parceiro"></div>
+                        <h3>Tristique nec arcu</h3>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque id velit id…</p>
+                    </div>
+               
+               
+                    <div class="detalhes-parceiro">
+                        <div class="dretangulo-parceiro"></div>
+                        <h3>Nam semper nibh non lectus</h3>
+                        <p>Maecenas tincidunt est a risus facilisis vestibulum non sit amet purus. Mauris semper quis.</p>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="box-footer01">
+                    <div class="realizacao">
+                        <h3>Elementum dictum</h3>
+                        <div class="retangulos-realizacao">
+                            <div class="retangulo-realizacao01"></div>
+                            <div class="retangulo-realizacao02"></div>
+                            <div class="retangulo-realizacao03"></div>
+                        </div>
+                    </div>
+                    <div class="apoio">
+                        <h3>Donec</h3>
+                        <div class="retangulos-apoio">
+                            <div class="retangulo-apoio01"></div>
+                            <div class="retangulo-apoio02"></div>
+                            <div class="retangulo-apoio03"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-footer02">
+                    <p>Cras dolor odio <div class="traco"></div></p>
+                    <p>Quisque <div class="traco"></div></p>
+                    <img class="facebookf" src="./img/Facebook@3x.svg" onclick='entrarFacebook(event)'>
+                    <img class="twitterf" src="./img/Twitter@3x.svg" onclick='entrarTwitter(event)'> 
+                    <img class="instagramf" src="./img/Instagram@3x.svg" onclick='entrarInstagram(event)'> <div class="traco"></div>
+                    <p>© Suspendisse rutrum</p>
+                </div>
+            </footer>
+        </div>
+        <script src="./JS/script.js"></script>
+    </body>
+</html>
+
